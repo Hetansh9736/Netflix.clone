@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url(Assets/Images/bg.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 95vh;
+    background-color: black;
+    opacity: 0.50;
+    position: absolute;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+nav img {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+    height: min-content;
+}
+
+.lang {
+    color: white;
+    background: none;
+    padding: 4px 16px;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+option {
+    color: black;
+}
+
+.bt1 {
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bt1:hover {
+    background-color: rgb(229, 9, 20);
+}
+
+.startcontainer {
+    height: calc(95vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lines {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.line2 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.line3 {
+    display: block;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.signin {
+    margin: 48px 16px;
+}
+
+.btn2 {
+    display: flex;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.fill {
+    width: 370px;
+    background: none;
+    border: 1px solid gray;
+    padding: 18px 16px;
+    border-radius: 4px;
+    color: white;
+}
+
+.bt2 {
+    padding: 16px 20px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bt2:hover {
+    background-color: rgb(229, 9, 20);
+}
+
+@media (width<420px) {
+    nav img {
+        width: 100px;
+    }
+
+    .lang {
+        padding: 0px 0px;
+        font-size: 12px;
+    }
+}
+
+@media (width<620px) {
+    .fill {
+        width: 300px;
+    }
+}
+
+@media (width<975px) {
+    .line1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .line2 {
+        text-align: center;
+    }
+
+    .line3 {
+        text-align: center;
+    }
+}
+
+@media (width<650px) {
+    .line1 {
+        font-size: 24px;
+    }
+}
+
+@media (width<390px) {
+    .line2 {
+        font-size: 16px;
+    }
+
+    .line3 {
+        font-size: 12px;
+
+    }
+}
+
+@media (width<320px) {
+    .line3 {
+        font-size: 12px;
+
+    }
+}
+
+@media (width<330px) {
+    .fill {
+        width: 250px;
+    }
+
+    .line3 {
+        font-size: 12px;
+
+    }
+}
+
+body {
+    background-color: black;
+}
+
+.sepration {
+    height: 10px;
+    background-color: rgb(46, 44, 44);
+}
+
+.firstcontainer {
+    padding: 72px 0px;
+}
+
+.paras {
+    width: 600px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.para1 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.lpara {
+    line-height: 65px;
+}
+
+.para2 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.firstcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tv {
+    position: relative;
+}
+
+.movie1 {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 48%;
+    width: 100%;
+    height: 100%;
+    max-width: 75%;
+    max-height: 68%;
+    transform: translate(-50%, -50%);
+    object-fit: contain
+}
+
+.movie2 {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (width<940px) {
+    .firstcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paras {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (width<640px) {
+    img {
+        width: 400px;
+    }
+
+    .lpara {
+        line-height: 40px;
+    }
+}
+
+@media (width<610px) {
+    .paras {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .para1 {
+
+        font-size: 25px;
+    }
+
+    .para2 {
+        font-size: 20px;
+    }
+}
+
+@media (width<410px) {
+    img {
+        width: 250px;
+    }
+}
+
+.Questions {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 46px;
+}
+
+.q1 {
+    width: 75vw;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    margin: auto;
+    cursor: pointer;
+}
+
+.q2 {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.q1:hover {
+    background-color: rgb(81, 81, 81);
+}
+
+@media (width<480px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .q2 {
+        font-size: 16px;
+    }
+}
+
+.owner {
+    font-family: "Martel Sans", sans-serif;
+    color: white;
+    text-align: right;
+    margin: 10px;
+}
